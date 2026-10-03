@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* CSS */
+      .navigasi {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #2c3e50;
+        /* height: 500px; */
+        padding: 12px 24px;
+      }
+
+      .nav-item {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+      }
+
+      .nav-item:hover {
+        background-color: #34495e;
+      }
+
+      /* CSS */
+      .galeri-produk {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        height: 500px;
+        padding: 24px 0px;
+      }
+
+      .kartu {
+        /* flex: 1; */
+        padding: 16px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fafafa;
+      }
+
+      #a {
+        flex: 1 1 200px;
+      }
+      #b {
+        flex: 1 1;
+      }
+
+      #c {
+        flex: 1 0;
+      }
+      /* CSS */
+      .layout-artikel {
+        display: flex;
+        gap: 24px;
+        padding: 24px;
+        align-items: flex-start; /* Tinggi masing-masing kolom mengikuti kontennya */
+      }
+
+      .konten-utama {
+        flex: 3; /* Mengambil 3 bagian dari total ruang yang tersedia */
+      }
+
+      .sidebar {
+        flex: 5; /* Mengambil 1 bagian dari total ruang yang tersedia */
+        background-color: #f5f5f5;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      /* CSS */
+      .galeri-foto {
+        display: flex;
+        flex-wrap: wrap; /* Elemen yang tidak muat akan turun ke baris berikutnya */
+        gap: 12px;
+        padding: 16px;
+      }
+
+      .foto {
+        flex-basis: calc(33.333% - 8px); /* Tiga kolom per baris */
+        min-width: 150px; /* Lebar minimum sebelum turun baris */
+        height: 120px;
+        background-color: steelblue;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+      }
+      
+      /* CSS */
+      .halaman-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f2f5;
+      }
+
+      .form-login {
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .form-login h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .form-login input {
+        padding: 10px 14px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+      }
+
+      .tombol-masuk {
+        padding: 10px;
+        background-color: steelblue;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      .tombol-masuk:hover {
+        background-color: #2a6496;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div class="halaman-login">
+      <div class="form-login">
+        <h2>Masuk ke Akun Anda</h2>
+        <input type="email" placeholder="Alamat Email" />
+        <input type="password" placeholder="Kata Sandi" />
+        <button class="tombol-masuk">Masuk</button>
+      </div>
+    </div>
+  </body>
+</html>
